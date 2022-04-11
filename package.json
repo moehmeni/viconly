@@ -8,16 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mdmomeni/viconly"
+    "url": "https://github.com/mdmomeni/viconly.git"
   },
+  "homepage": "https://github.com/mdmomeni/viconly",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdmomeni/viconly/issues",
+    "email": "moehmeni@gmail.com"
+  },
   "main": "dist/viconly.ssr.js",
   "browser": "dist/viconly.esm.js",
   "module": "dist/viconly.esm.js",
   "unpkg": "dist/viconly.min.js",
   "files": [
     "dist/*",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "README.md",
+    "LICENSE"
   ],
   "sideEffects": false,
   "scripts": {
