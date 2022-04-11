@@ -1,7 +1,12 @@
 {
   "name": "viconly",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vue component for a free and nice-looking icon pack, Iconly.",
+  "author": {
+    "name": "Mohammad Momeni",
+    "email": "moehmeni@gmail.com"
+  },
+  "license": "MIT",
   "main": "dist/viconly.ssr.js",
   "browser": "dist/viconly.esm.js",
   "module": "dist/viconly.esm.js",
