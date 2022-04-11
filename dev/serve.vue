@@ -12,6 +12,6 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <viconly />
+    <viconly icon="Home" light color="black" size="10" />
   </div>
 </template>
