@@ -22,11 +22,11 @@ Vue.component('viconly', Viconly)
 ```
 then in your `.vue` template
 ```vue
-<viconly icon="Home"></viconly>
+<viconly icon="Home" />
 ```
 or with more customizations
 ```vue
-<viconly icon="Home" bold color="green" size="1.5"></viconly>
+<viconly icon="Home" bold color="green" size="1.5" />
 ```
 _Note:_ `size` property unit is `rem`
 
