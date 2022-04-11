@@ -1,6 +1,8 @@
 # Viconly
 Vue.js component wrapper for a free and nice-looking icon pack, [**Iconly**](https://piqodesign.gumroad.com/l/iconly).
 
+<img height="320" src="https://beatly-video.s3.ir-thr-at1.arvanstorage.com/viconly_poster.jpg" />
+
 ## Installation (add to the project)
 ```
 yarn add viconly
