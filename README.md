@@ -33,7 +33,7 @@ _Note:_ `size` property unit is `rem`
 
 ## Nuxt usage
 You can use Viconly component globally using Nuxt [plugins directory](https://nuxtjs.org/docs/directory-structure/plugins/).
-create a `viconly.js` in `plugins` directory of your Nuxt project (create the directory itself if it doesn't exist) then declare it in `nuxt.config.js`.
+create a `viconly.js` in `plugins` directory of your Nuxt project (create the directory itself if it doesn't exist) then declare it and Viconly CSS styles in `nuxt.config.js`.
 
 `/plugins/viconly.js`
 ```js
@@ -44,11 +44,12 @@ Vue.component('viconly', Viconly)
 ```
 `nuxt.config.js`
 ```js
- ...
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    { src: "@/plugins/viconly.js" },
-  ],
-  ...
+plugins: [
+  { src: "@/plugins/viconly.js" },
+],
+css: [
+  "viconly/src/iconly/style.css",
+  "viconly/src/iconly/bulk-style.css",
+],
 ```
 After this you're able to use the `viconly` component globally in any of your Nuxt project templates.
