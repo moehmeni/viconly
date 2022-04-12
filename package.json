@@ -22,7 +22,7 @@
   "unpkg": "dist/viconly.min.js",
   "files": [
     "dist/*",
-    "src/**/*.vue",
+    "src/*",
     "README.md",
     "LICENSE"
   ],
