@@ -18,29 +18,29 @@ Declare the component globally
 ```js
 import Viconly from 'viconly'
 
-Vue.component('viconly', Viconly)
+Vue.component('ic', Viconly)
 ```
 then in your `.vue` template
 ```vue
-<viconly icon="Home" />
+<ic icon="Home" />
 ```
 or with more customizations
 ```vue
-<viconly icon="Home" bold color="green" size="1.5" />
+<ic icon="Home" bold color="green" size="1.5" />
 ```
-_Note:_ `size` property unit is `rem`
+_Note:_ the `size` property unit is `rem`
 
 
 ## Nuxt usage
 You can use Viconly component globally using Nuxt [plugins directory](https://nuxtjs.org/docs/directory-structure/plugins/).
-create a `viconly.js` in `plugins` directory of your Nuxt project (create the directory itself if it doesn't exist) then declare it and Viconly CSS styles in `nuxt.config.js`.
+create a `viconly.js` in `plugins` directory of your Nuxt project (create the directory itself if it doesn't exist) then declare the component and CSS styles in `nuxt.config.js`.
 
 `/plugins/viconly.js`
 ```js
 import Vue from 'vue'
 import Viconly from 'viconly'
 
-Vue.component('viconly', Viconly)
+Vue.component('ic', Viconly)
 ```
 `nuxt.config.js`
 ```js
@@ -52,4 +52,4 @@ css: [
   "viconly/src/iconly/bulk-style.css",
 ],
 ```
-After this you're able to use the `viconly` component globally in any of your Nuxt project templates.
+After this you're able to use the `ic` (or whatever you named it) component globally in any of your Nuxt project templates.
