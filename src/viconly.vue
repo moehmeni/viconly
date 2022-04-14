@@ -60,4 +60,13 @@ export default /*#__PURE__*/ {
   align-items: center;
   justify-content: center;
 }
+[class^="iconlyBulk-"],
+[class*=" iconlyBulk-"] {
+  position: relative;
+}
+[class^="iconlyBulk-"] .path2,
+[class*=" iconlyBulk-"] .path2 {
+  position: absolute;
+  right: 0;
+}
 </style>
