@@ -1,5 +1,3 @@
-/src/iconly
-
 .DS_Store
 node_modules/
 /dist/
