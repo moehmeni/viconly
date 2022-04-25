@@ -4,13 +4,9 @@ You can see all the styles and names [here](https://amirrezajef.ir/iconly/demo.h
 
 <img height="240" src="https://beatly-video.s3.ir-thr-at1.arvanstorage.com/viconly_poster.jpg" />
 
-## Installation (add to the project)
-```
+## Installation
+```bash
 yarn add viconly
-```
-Or
-```
-npm install viconly
 ```
 
 ## Usage
