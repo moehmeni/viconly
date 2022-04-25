@@ -2,7 +2,7 @@
 Vue.js component wrapper for a free and nice-looking icon pack, [Iconly](https://piqodesign.gumroad.com/l/iconly).
 You can see all the styles and names [here](https://amirrezajef.ir/iconly/demo.html)
 
-<img height="320" src="https://beatly-video.s3.ir-thr-at1.arvanstorage.com/viconly_poster.jpg" />
+<img height="240" src="https://beatly-video.s3.ir-thr-at1.arvanstorage.com/viconly_poster.jpg" />
 
 ## Installation (add to the project)
 ```
@@ -28,7 +28,8 @@ or with more customizations
 ```vue
 <ic icon="Home" bold color="green" size="1.5" />
 ```
-_Note:_ the `size` property unit is `rem`
+_Note:_ the __size__ property unit is `rem`
+You can either use `light`, `bold`or `bulk` for the icon style while the default style is _broken_.
 
 
 ## Nuxt usage
