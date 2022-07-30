@@ -1,9 +1,6 @@
 
 <template>
-  <div
-    :style="{ fontSize: size + 'rem', color }"
-    class="viconly-icon-container"
-  >
+  <div :style="{ fontSize: size, color }" class="viconly-icon-container">
     <i
       v-if="!bulk"
       :class="{
@@ -48,7 +45,7 @@ export default /*#__PURE__*/ {
     },
     size: {
       type: String,
-      default: "0.6",
+      default: "0.6rem",
     },
   },
 };
