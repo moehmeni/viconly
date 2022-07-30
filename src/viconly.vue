@@ -13,7 +13,7 @@
       }"
     >
     </i>
-    <span v-else :class="{ ['iconlyBulk-' + icon]: true }">
+    <span v-else :class="{ ['iconlyBulk-' + name]: true }">
       <span class="path1"></span>
       <span class="path2"></span>
     </span>
@@ -26,7 +26,7 @@ import "@/iconly/bulk-style.css";
 export default /*#__PURE__*/ {
   name: "Viconly", // vue component name
   props: {
-    icon: {
+    name: {
       type: String,
       required: true,
     },
