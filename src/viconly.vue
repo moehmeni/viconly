@@ -8,8 +8,8 @@
       v-if="!bulk"
       :class="{
         icbo: bold,
-        icli: light,
-        ['iconly-' + icon]: true,
+        icli: !broken,
+        ['iconly-' + name]: true,
       }"
     >
     </i>
@@ -34,11 +34,11 @@ export default /*#__PURE__*/ {
       type: String,
       default: "#ffffff",
     },
-    bold: {
+    broken: {
       type: Boolean,
       default: false,
     },
-    light: {
+    bold: {
       type: Boolean,
       default: false,
     },
