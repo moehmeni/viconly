@@ -60,7 +60,7 @@ var script = {
   name: "Viconly",
   // vue component name
   props: {
-    icon: {
+    name: {
       type: String,
       required: true
     },
@@ -68,11 +68,11 @@ var script = {
       type: String,
       default: "#ffffff"
     },
-    bold: {
+    broken: {
       type: Boolean,
       default: false
     },
-    light: {
+    bold: {
       type: Boolean,
       default: false
     },
@@ -82,7 +82,7 @@ var script = {
     },
     size: {
       type: String,
-      default: "0.6"
+      default: "0.6rem"
     }
   }
 };function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier /* server only */, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
@@ -214,13 +214,13 @@ var __vue_render__ = function __vue_render__() {
   return _c('div', {
     staticClass: "viconly-icon-container",
     style: {
-      fontSize: _vm.size + 'rem',
+      fontSize: _vm.size,
       color: _vm.color
     }
   }, [_vm._ssrNode(!_vm.bulk ? "<i" + _vm._ssrClass(null, (_obj = {
     icbo: _vm.bold,
-    icli: _vm.light
-  }, _obj['iconly-' + _vm.icon] = true, _obj)) + " data-v-0a59eca6></i>" : "<span" + _vm._ssrClass(null, (_obj$1 = {}, _obj$1['iconlyBulk-' + _vm.icon] = true, _obj$1)) + " data-v-0a59eca6><span class=\"path1\" data-v-0a59eca6></span> <span class=\"path2\" data-v-0a59eca6></span></span>")]);
+    icli: !_vm.broken
+  }, _obj['iconly-' + _vm.name] = true, _obj)) + " data-v-17e6e1f7></i>" : "<span" + _vm._ssrClass(null, (_obj$1 = {}, _obj$1['iconlyBulk-' + _vm.name] = true, _obj$1)) + " data-v-17e6e1f7><span class=\"path1\" data-v-17e6e1f7></span> <span class=\"path2\" data-v-17e6e1f7></span></span>")]);
 };
 
 var __vue_staticRenderFns__ = [];
@@ -228,8 +228,8 @@ var __vue_staticRenderFns__ = [];
 
 var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-0a59eca6_0", {
-    source: ".viconly-icon-container[data-v-0a59eca6]{display:flex;align-items:center;justify-content:center}[class*=\" iconlyBulk-\"][data-v-0a59eca6],[class^=iconlyBulk-][data-v-0a59eca6]{position:relative}[class*=\" iconlyBulk-\"] .path2[data-v-0a59eca6],[class^=iconlyBulk-] .path2[data-v-0a59eca6]{position:absolute;right:0}",
+  inject("data-v-17e6e1f7_0", {
+    source: ".viconly-icon-container[data-v-17e6e1f7]{display:flex;align-items:center;justify-content:center}[class*=\" iconlyBulk-\"][data-v-17e6e1f7],[class^=iconlyBulk-][data-v-17e6e1f7]{position:relative}[class*=\" iconlyBulk-\"] .path2[data-v-17e6e1f7],[class^=iconlyBulk-] .path2[data-v-17e6e1f7]{position:absolute;right:0}",
     map: undefined,
     media: undefined
   });
@@ -237,10 +237,10 @@ var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__ = "data-v-0a59eca6";
+var __vue_scope_id__ = "data-v-17e6e1f7";
 /* module identifier */
 
-var __vue_module_identifier__ = "data-v-0a59eca6";
+var __vue_module_identifier__ = "data-v-17e6e1f7";
 /* functional template */
 
 var __vue_is_functional_template__ = false;

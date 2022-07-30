@@ -3,7 +3,7 @@ var script = {
   name: "Viconly",
   // vue component name
   props: {
-    icon: {
+    name: {
       type: String,
       required: true
     },
@@ -11,11 +11,11 @@ var script = {
       type: String,
       default: "#ffffff"
     },
-    bold: {
+    broken: {
       type: Boolean,
       default: false
     },
-    light: {
+    bold: {
       type: Boolean,
       default: false
     },
@@ -25,7 +25,7 @@ var script = {
     },
     size: {
       type: String,
-      default: "0.6"
+      default: "0.6rem"
     }
   }
 };
@@ -174,16 +174,16 @@ var __vue_render__ = function () {
   return _c('div', {
     staticClass: "viconly-icon-container",
     style: {
-      fontSize: _vm.size + 'rem',
+      fontSize: _vm.size,
       color: _vm.color
     }
   }, [!_vm.bulk ? _c('i', {
     class: (_obj = {
       icbo: _vm.bold,
-      icli: _vm.light
-    }, _obj['iconly-' + _vm.icon] = true, _obj)
+      icli: !_vm.broken
+    }, _obj['iconly-' + _vm.name] = true, _obj)
   }) : _c('span', {
-    class: (_obj$1 = {}, _obj$1['iconlyBulk-' + _vm.icon] = true, _obj$1)
+    class: (_obj$1 = {}, _obj$1['iconlyBulk-' + _vm.name] = true, _obj$1)
   }, [_c('span', {
     staticClass: "path1"
   }), _vm._v(" "), _c('span', {
@@ -196,8 +196,8 @@ var __vue_staticRenderFns__ = [];
 
 const __vue_inject_styles__ = function (inject) {
   if (!inject) return;
-  inject("data-v-0a59eca6_0", {
-    source: ".viconly-icon-container[data-v-0a59eca6]{display:flex;align-items:center;justify-content:center}[class*=\" iconlyBulk-\"][data-v-0a59eca6],[class^=iconlyBulk-][data-v-0a59eca6]{position:relative}[class*=\" iconlyBulk-\"] .path2[data-v-0a59eca6],[class^=iconlyBulk-] .path2[data-v-0a59eca6]{position:absolute;right:0}",
+  inject("data-v-17e6e1f7_0", {
+    source: ".viconly-icon-container[data-v-17e6e1f7]{display:flex;align-items:center;justify-content:center}[class*=\" iconlyBulk-\"][data-v-17e6e1f7],[class^=iconlyBulk-][data-v-17e6e1f7]{position:relative}[class*=\" iconlyBulk-\"] .path2[data-v-17e6e1f7],[class^=iconlyBulk-] .path2[data-v-17e6e1f7]{position:absolute;right:0}",
     map: undefined,
     media: undefined
   });
@@ -205,7 +205,7 @@ const __vue_inject_styles__ = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__ = "data-v-0a59eca6";
+const __vue_scope_id__ = "data-v-17e6e1f7";
 /* module identifier */
 
 const __vue_module_identifier__ = undefined;
