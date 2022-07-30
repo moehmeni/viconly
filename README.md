@@ -18,14 +18,13 @@ Vue.component('ic', Viconly)
 ```
 then in your `.vue` template
 ```vue
-<ic icon="Home" />
+<ic name="Home" />
 ```
 or with more customizations
 ```vue
-<ic icon="Home" bold color="green" size="1.5" />
+<ic name="Home" bold color="green" size="1.5rem" />
 ```
-_Note:_ the __size__ property unit is `rem`
-You can either use `light`, `bold`or `bulk` for the icon style while the default style is _broken_.
+You can either use `broken`, `bold`, or `bulk` for the icon style while the default style is __light__.
 
 
 ## Nuxt usage
